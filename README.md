@@ -9,3 +9,7 @@ I will be posting BDFD codes here from my YouTube tutorials
 Soon! 
 <!-- YOUTUBE:END -->
 
+
+**© [KrayFish](https://github.com/krayz-clous)**
+
+**© [Credits to reconlx for this read.md](https://github.com/reconlx)**
