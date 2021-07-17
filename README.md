@@ -12,4 +12,4 @@ Soon!
 
 **© [KrayFish](https://github.com/krayz-clous)**
 
-**© [Credits to reconlx for this read.md](https://github.com/reconlx)**
+**© [Credits to reconlx for this readme.md](https://github.com/reconlx)**
