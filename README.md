@@ -2,4 +2,7 @@
 I will be posting BDFD codes here from my YouTube tutorials 
 
 
-#https://youtube.com/channel/UCXQ5fsyWx3hEr93CbStfjyA#Youtube-channel 👋
+[YouTube channel](https://youtube.com/channel/UCXQ5fsyWx3hEr93CbStfjyA) ⭕
+
+YouTube Videos:
+Soon! 
