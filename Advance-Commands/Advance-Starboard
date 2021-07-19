@@ -37,3 +37,10 @@ $color[#ffe500]
 $addReactions[🌟]
 $supressErrors[>1; something went wrong]
 $argsCheck[>1;pls enter an message ID!]
+
+
+Variables:
+
+StarboardTotalStars Value: 0
+
+StarboardChannel Value: (put your starboard channel ID here!)
