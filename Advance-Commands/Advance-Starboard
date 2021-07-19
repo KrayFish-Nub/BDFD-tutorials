@@ -1,1 +1,39 @@
-Soon! The command will be in the next video!
+Starboard command:
+(prefix)star
+Code:
+$onlyPerms[managemessages;]
+$onlyBotPerms[managemessages;]
+$nomention $suppressErrors $deletecommand $botListHide
+$onlyIf[$getServerVar[StarboardChannel;$guildID]!=0;]
+$clear[1;$authorID;no]
+Starring message... please wait.
+$deleteIn[10s]
+$argsCheck[>1;pls enter a message ID!]
+
+(prefix)star (this require unstable)
+Code:
+$onlyPerms[managemessages;Missing permissions: `MANAGE_MESSAGES`]
+$onlyBotPerms[managemessages;Missing permissions: `MANAGE_MESSAGES`]
+$nomention $suppressErrors[Please enter the message ID]
+$onlyIf[$getServerVar[StarboardChannel;$guildID]!=0;Starboard channel has not set.]
+$useChannel[$getServerVar[StarboardChannel;$guildID]]
+$setUserVar[StarboardTotalStars;$sum[$getUserVar[StarboardTotalStars;$authorOfMessage[$findChannel[$channelID];$message]];1];$authorOfMessage[$findChannel[$channelID];$message]]
+**$sum[$getUserVar[StarboardTotalStars;$authorOfMessage[$findChannel[$channelID];$message]];1] |** <@$authorOfMessage[$findChannel[$channelID];$message]>
+$authorIcon[$userAvatar[$authorOfMessage[$findChannel[$channelID];$message]]]
+$author[$username[$authorOfMessage[$findChannel[$channelID];$message]]#$discriminator[$authorOfMessage[$findChannel[$channelID];$message]]]
+$description[
+$getMessage[$findChannel[$channelID];$message]
+
+**Original**
+**[Click to jump to message!\](https://discord.com/channels/$guildID/$channelID/$message)**
+]
+$if[$checkContains[$getMessage[$findChannel[$channelID];$message];https://]]
+$if[$checkContains[$getMessage[$findChannel[$channelID];$message];.jpg;.png;.gif]]
+$image[$getMessage[$findChannel[$channelID];$message]]
+$endif $endif
+$addTimestamp
+$footer[ID: $authorOfMessage[$findChannel[$channelID];$message]]
+$color[#ffe500]
+$addReactions[🌟]
+$supressErrors[>1; something went wrong]
+$argsCheck[>1;pls enter an message ID!]
